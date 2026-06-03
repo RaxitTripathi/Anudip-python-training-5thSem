@@ -20,3 +20,17 @@ if(side1+side2>side3 and side2+side3>side1 and side1+side3>side2):
     print("Given sides of triangle form a triangle")
 else:
     print("Given sides of triangle do not form a triangle")
+
+#Type of triangle based on side 
+
+if(side1+ side2 + side3 == 180):
+    
+    if(side1==side2==side3):
+        print("Equalateral Triangle")
+    elif(side1==side2 or side2==side3 or side3==side1):
+        print("Isosceles Triangle")
+    else:
+        print("Scalen Triangle")        
+        
+else:
+    print("Above angles do not form a triangle")     
