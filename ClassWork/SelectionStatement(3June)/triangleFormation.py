@@ -21,3 +21,20 @@ if(angle1+angle2+angle3 ==180):
     print("Above angles form a triangle")
 else:
     print("Above angles do not form a triangles")    
+
+
+#Specifies type of triangle
+
+if(angle1 + angle2 + angle3 == 180):
+    # Type by angles
+    if(angle1 == 90 or angle2 == 90 or angle3 == 90):
+        print("Right Angle Triangle")
+
+    elif(angle1 > 90 or angle2 > 90 or angle3 > 90):
+        print("Obtuse Triangle")
+
+    else:
+        print("Acute Triangle")
+
+else:
+    print("Above angles do not form a triangle") 
