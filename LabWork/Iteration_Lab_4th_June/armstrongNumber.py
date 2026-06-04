@@ -10,7 +10,7 @@ while(user_input>0):
     user_input=user_input//10
     
 
-if(sum==user_input):
+if(sum==og):
     print("Output:")
     print(og,"is an Armstrong Number")
 else:   
