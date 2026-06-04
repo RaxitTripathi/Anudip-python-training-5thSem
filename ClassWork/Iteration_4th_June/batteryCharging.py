@@ -1,4 +1,4 @@
-# WAP for displaying battery charging level
+# WAP for displaying battery charging levell
 
 charging_level = int(input("Enter your current battery level: "))
 
