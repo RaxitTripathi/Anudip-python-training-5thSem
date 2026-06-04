@@ -12,11 +12,11 @@ if(user_input<=1):
 else: 
     print("Output:")
     print("Factor:",end="")
-    for i in range(1,user_input+1):
+    for i in range(1,(user_input//2)+1):
         if(user_input%i==0):
             print(i,end=" ")
             count+=1
-print()
+    print(user_input)
 if(count==2):
     print(user_input,"is a Prime Number") 
 else:
