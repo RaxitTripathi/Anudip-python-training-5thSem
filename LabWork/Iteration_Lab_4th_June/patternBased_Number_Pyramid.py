@@ -11,11 +11,13 @@
 # Challenge: 
 # Print the reverse pattern as well.
 
-
+#Input from user
 pattern_row=int(input("Enter the no of row for pattern:"))
+#Validation
 if(pattern_row<0):
     exit("Negative number not allowed:")
 
+#Pattern
 for i in range(1,pattern_row+1):
     for j in range(1,i+1):
         print(j,end="")
