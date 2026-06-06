@@ -6,7 +6,8 @@ while(student_no):
     user_input_rollno=int(input("Enter roll no:"))
     user_input_attendence=input("Enter attendence:").lower()
     if user_input_attendence != "present" and user_input_attendence != "absent":
-        exit("Input only Present or Absent")
+        print("Present or Absent so reinput")
+        student_no +=1 
     class_report.update({user_input_rollno:user_input_attendence,}) 
     student_no -= 1
 
