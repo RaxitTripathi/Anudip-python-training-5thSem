@@ -55,7 +55,7 @@ print("All student names : ",student_marks.keys())
 print("All marks : ",student_marks.values())
 #--------------------------------------------------
 #to find the highest scorer
-dict_items = student_marks.items()
+dict_items = list(student_marks.items())
 highest_scorer = dict_items[0][0]
 high_score = dict_items[0][1]
 for item in dict_items:
