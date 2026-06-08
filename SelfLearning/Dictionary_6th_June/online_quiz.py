@@ -49,9 +49,16 @@ for score in quiz_scores.values():
 print("\nStudents scoring below 10:", count)
 
 # Find the top performer
-top_performer = max(quiz_scores, key=quiz_scores.get)
+top_performer = None
+highest_score = 0
+
+for student in quiz_scores:
+    if quiz_scores[student] > highest_score:
+        highest_score = quiz_scores[student]
+        top_performer = student
+
 print("\nTop Performer:", top_performer)
-print("Score:", quiz_scores[top_performer])
+print("Score:", highest_score)
 
 # Create a list of students who passed (>= 10 marks)
 passed_students = []
