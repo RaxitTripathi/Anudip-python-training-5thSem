@@ -47,7 +47,7 @@ print("\nNumber of products with stock more than 50:", count)
 
 # Product with minimum stock
 min_product = None
-min_quantity = float('inf')
+min_quantity = 9999
 
 for product in inventory:
     if inventory[product] < min_quantity:
