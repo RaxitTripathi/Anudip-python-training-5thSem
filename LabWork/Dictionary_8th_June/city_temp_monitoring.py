@@ -109,4 +109,4 @@ Average Temperature: 36.8
 
 Pleasant Cities: ['Mumbai', 'Bengaluru', 'Pune']
 
-Cities with Temperature Between 35°C and 40°C: 4 """
+Cities with Temperature Between 35°C and 40°C: 4 """ 
