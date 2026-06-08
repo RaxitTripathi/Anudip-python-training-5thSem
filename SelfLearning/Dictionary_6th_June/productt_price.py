@@ -47,9 +47,16 @@ for price in prices.values():
 print("\nNumber of products costing less than ₹3000:", count)
 
 # Find the most expensive product
-expensive_product = max(prices, key=prices.get)
-print("\nMost expensive product:", expensive_product)
-print("Price:", prices[expensive_product])
+expensive_product = None
+highest_price = 0
+
+for product in prices:
+    if prices[product] > highest_price:
+        highest_price = prices[product]
+        expensive_product = product
+
+print("Most Expensive Product:", expensive_product)
+print("Price:", highest_price)
 
 # Create a list of products priced between ₹2000 and ₹10000
 mid_range_products = []
