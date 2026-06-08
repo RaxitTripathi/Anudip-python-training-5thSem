@@ -55,7 +55,7 @@ print("\nNumber of failed students:", failed_count)
 # 3. Find the highest scorer
 
 highest_scorer = None
-highest_marks = 0
+highest_marks = -9999
 
 for student in marks:
     if marks[student] > highest_marks:
