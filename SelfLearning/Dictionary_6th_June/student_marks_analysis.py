@@ -53,9 +53,17 @@ for score in marks.values():
 print("\nNumber of failed students:", failed_count)
 
 # 3. Find the highest scorer
-highest_scorer = max(marks, key=marks.get)
+
+highest_scorer = None
+highest_marks = 0
+
+for student in marks:
+    if marks[student] > highest_marks:
+        highest_marks = marks[student]
+        highest_scorer = student
+
 print("\nHighest Scorer:")
-print(highest_scorer, ":", marks[highest_scorer])
+print(highest_scorer, ":", highest_marks)
 
 # 4. List students scoring between 60 and 75
 students_60_75 = []
