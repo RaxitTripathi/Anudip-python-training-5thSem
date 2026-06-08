@@ -10,5 +10,10 @@ for letter in user_input:
             vowel_dict[letter] +=1
         else:
             vowel_dict[letter]=1    
+
+
+print("Total vowel in given sentence is:")
+for vowel in vowel_dict:
+    print(vowel,":",vowel_dict[vowel])            
         
-print("Total vowel in given sentence is",vowel_dict)        
+     
