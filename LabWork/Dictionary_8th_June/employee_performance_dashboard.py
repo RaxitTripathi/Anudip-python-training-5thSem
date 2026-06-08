@@ -97,3 +97,24 @@ print("\nExcellent (>=90):", excellent)
 print("Good (75-89):", good)
 print("Average (60-74):", average_list)
 print("Poor (<60):", poor)
+
+
+# output:
+""" 
+Employees Scoring Above 80:
+EMP101 : 92
+EMP104 : 88
+EMP105 : 97
+EMP107 : 81
+
+Employees Needing Improvement: 3
+
+Top Performer:
+EMP105 : 97
+
+Average Performance Score: 71.3
+
+Excellent (>=90): ['EMP101', 'EMP105']
+Good (75-89): ['EMP102', 'EMP104', 'EMP107']
+Average (60-74): ['EMP108', 'EMP110']
+Poor (<60): ['EMP103', 'EMP106', 'EMP109'] """
