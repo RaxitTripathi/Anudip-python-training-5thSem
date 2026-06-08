@@ -48,9 +48,18 @@ for count in passengers.values():
 print("\nStops with fewer than 10 passengers:", low_count)
 
 # Find the busiest stop
-busiest_stop = max(passengers, key=passengers.get)
-print("\nBusiest Stop:", busiest_stop)
-print("Passengers:", passengers[busiest_stop])
+
+busiest_stop = None
+max_passengers = 0
+
+for stop in passengers:
+    if passengers[stop] > max_passengers:
+        max_passengers = passengers[stop]
+        busiest_stop = stop
+
+print("Busiest Stop:", busiest_stop)
+print("Passengers:", max_passengers)
+
 
 # Create a list of stops requiring an extra bus (passengers > 25)
 extra_bus = []
