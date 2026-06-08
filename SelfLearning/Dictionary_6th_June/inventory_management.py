@@ -46,9 +46,16 @@ for stock in inventory.values():
 print("\nNumber of products with stock more than 50:", count)
 
 # Product with minimum stock
-min_product = min(inventory, key=inventory.get)
-print("\nProduct with minimum stock:", min_product)
-print("Stock:", inventory[min_product])
+min_product = None
+min_quantity = float('inf')
+
+for product in inventory:
+    if inventory[product] < min_quantity:
+        min_quantity = inventory[product]
+        min_product = product
+
+print("Product with minimum stock:", min_product)
+print("Quantity:", min_quantity)
 
 # Products that require restocking (stock < 20)
 restock = []
