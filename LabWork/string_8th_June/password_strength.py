@@ -1,4 +1,4 @@
-""" 2. Password Strength Analyzer 
+""" 2.Password Strength Analyzer 
 Problem Statement 
 A user enters a password. 
 Python@2026! 
