@@ -1,5 +1,5 @@
 """ 
-7. Username Generator System 
+7.Username Generator System 
 Problem Statement 
 A student enters: 
 Rahul Sharma 
@@ -17,7 +17,7 @@ name="Rahul Sharma"
 
 if(len(name) <=0 ):
     exit("Invalid Input Name!")
-    
+
 # 1. Remove spaces. 
 username=name.replace(" ","")
 
