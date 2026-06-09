@@ -14,6 +14,10 @@ Write a program to:
 
 review = "This product is excellent excellent excellent and very useful"
 
+if len(review) ==0:
+    exit("No review")
+
+
 # Convert sentence into list of words
 words = review.split()
 
@@ -82,7 +86,7 @@ if len(unique_words) == 0:
     print("Unique Words: No unique words found")
 else:
     print("Unique Words:", unique_words)
-    
+
 """ output:
 
 Total Words: 9
