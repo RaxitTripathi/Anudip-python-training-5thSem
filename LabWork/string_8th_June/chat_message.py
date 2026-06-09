@@ -15,6 +15,9 @@ Write a program to:
 
 message = "Python is awesome and Python is easy to learn"
 
+if len(message) ==0:
+    exit("No message")
+
 # Convert message into words
 words = message.split()
 
