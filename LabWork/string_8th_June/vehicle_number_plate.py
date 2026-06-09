@@ -19,7 +19,7 @@ o Last 4 must be digits.
 plate = "MH12AB4589"
 
 if len(plate) == 0:
-    exit("Vechile plate no not valid")
+    exit("Vechile plate not valid")
 
 # 1. Extract state code
 state_code = plate[0:2]
