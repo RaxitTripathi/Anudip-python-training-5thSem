@@ -13,7 +13,10 @@ Write a program to:
 4. Find the longest consecutive streak of Absence.  
 5. Determine whether attendance is below 75%.  """
 
-attendence="PPPP"
+attendence="PPAPPPAAPPPPAPP "
+
+if len(attendence) ==0:
+    exit("Invalid Attendence")
 
 print("Attendence:",attendence)
 # 1. Count Present and Absent days. 
