@@ -18,6 +18,9 @@ o At least one '.' exists after '@'.
 
 email = "rahul.sharma2026@gmail.com"
 
+if len(email) ==0:
+    exit("Invalid Email")
+
 # 1. Check exactly one '@'
 at_count = 0
 
