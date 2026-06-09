@@ -70,3 +70,17 @@ if (emp_id.startswith("EMP") and
 else:
     print("ID Status: Invalid")
 
+""" output:
+
+Number of uppercase letters: 7
+
+Number of digits: 7
+
+Joining year: 2026
+
+Employee name: ANUJ
+
+Digit List: ['2', '0', '2', '6', '4', '5', '8']
+
+Sum of Digits: 27
+ID Status: Valid """
