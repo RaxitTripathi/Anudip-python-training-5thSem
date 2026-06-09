@@ -1,59 +1,61 @@
+# Creates a python program to user which provide 2d figure circle rectangle and square after selecting the figure the user again ask type of corresponding data from the figure after input of corresponding data again provide a menu to select the operation area,perimeterand as per the data provided by user or operation selected by user display the result of operation. This task will be repeated again and again until user select option to exit from that figure. 
+
 from shapes_2d import *
 
-while True:
-    print("\n===== Shape Calculator =====")
-    print("1. Rectangle")
-    print("2. Square")
-    print("3. Circle")
-    print("4. Triangle")
-    print("5. Exit")
+while(True):
+    user_input=int(input(('''Select operation based on option:
+    1->Rectangle
+    2->Square
+    3->Circle
+    4->Exit:''')))
 
-    choice = input("Enter your choice: ")
+#Rectangle
+    if user_input ==1:
+        length=float(input("\nEnter Length of rectangle:"))
 
-    if choice == "1":
-        length = float(input("Enter length: "))
-        breadth = float(input("Enter breadth: "))
+        #validation
+        if length <=0:
+            exit("\nLength of rectangle can not be 0 or less")
 
-        if length <= 0 or breadth <= 0:
-            print("Length and breadth must be greater than 0.")
-        else:
-            print("Area =", area_of_rectangle(length, breadth))
-            print("Perimeter =", parameter_of_rectangle(length, breadth))
+        breadth=float(input("Enter Breadth od rectangle:")) 
+        #validation
+        if breadth <=0:
+            exit("Breadth of rectangle can not be 0 or less")   
+        print("\nArea of rectangle is:",area_of_rectangle(length,breadth))
+        print("Parameter of rectangle is:",parameter_of_rectangle(length,breadth))
 
-    elif choice == "2":
-        side = float(input("Enter side: "))
+#Square
+    elif user_input ==2:
+        side=float(input("\nEnter side of square:"))
+        
+        #Validation
+        if side <=0:
+            exit("Side of square can't be zero")
 
-        if side <= 0:
-            print("Side must be greater than 0.")
-        else:
-            print("Area =", area_of_square(side))
-            print("Perimeter =", parameter_of_square(side))
+        print("\nArea of square is:",area_of_square(side))
+        print("Parameter of square is:",parameter_of_square(side))
 
-    elif choice == "3":
-        radius = float(input("Enter radius: "))
+#Circle
+    elif user_input ==3:
+        radius=float(input("\nEnter radius of circle:"))
+        
+        #Validation
+        if radius <=0:
+            exit("radius of circle can't be zero")
 
-        if radius <= 0:
-            print("Radius must be greater than 0.")
-        else:
-            print("Area =", round(area_of_circle(radius), 2))
-            print("Circumference =", round(circumference_of_circle(radius), 2))
+        print("\nArea of circle is:",area_of_circle(radius))
+        print("Circumferance of circle is:",circumference_of_circle(radius))
 
-    elif choice == "4":
-        base = float(input("Enter base: "))
-        height = float(input("Enter height: "))
-        a = float(input("Enter side 1: "))
-        b = float(input("Enter side 2: "))
-        c = float(input("Enter side 3: "))
-
-        if base <= 0 or height <= 0 or a <= 0 or b <= 0 or c <= 0:
-            print("All values must be greater than 0.")
-        else:
-            print("Area =", area_of_triangle(base, height))
-            print("Perimeter =", perimeter_of_triangle(a, b, c))
-
-    elif choice == "5":
-        print("Program Ended.")
+#Exit
+    elif user_input ==4:
+        print("\nExit from Operations:")
         break
 
+#Invalid input
     else:
-        print("Invalid Choice.")
+        print("\nInvalid input")    
+
+            
+
+
+        
