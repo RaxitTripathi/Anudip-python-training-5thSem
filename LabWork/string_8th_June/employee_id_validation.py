@@ -18,6 +18,9 @@ o Ends with exactly 3 digits
 
 emp_id = "EMP2026ANUJ458"
 
+if len(emp_id) ==0:
+    exit("Invalid Id")
+
 # 1. Count the number of uppercase letters.  
 count_upper=0
 
