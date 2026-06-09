@@ -103,3 +103,13 @@ elif len(password) >= 8:
 
 else:
     print("Password Strength: Weak")
+
+""" output:
+
+Uppercase Letters: 1
+Lowercase Letters: 5
+Digits: 4
+Special Characters: 2
+Digits Present: ['2', '0', '2', '6']
+Special Characters Present: ['@', '!']
+Password Strength: Strong """
