@@ -176,5 +176,67 @@ Enter choice: '''))
         print("\nInvalid Choice")
             
 
+""" Output:
+
+
+Select operation based on option:
+1 -> Rectangle
+2 -> Square
+3 -> Circle
+4 -> Exit
+
+Enter choice: 1
+
+Enter Length of Rectangle: 23
+Enter Breadth of Rectangle: 12
+
+Select Operation:
+1. Area
+2. Perimeter
+3. Change Figure
+
+Enter choice: 2
+
+Perimeter of Rectangle = 70.0
+
+Do you want to perform another operation on the same figure? (Y/N): Y
+
+Select Operation:
+1. Area
+2. Perimeter
+3. Change Figure
+
+Enter choice: 3
+
+Select operation based on option:
+1 -> Rectangle
+2 -> Square
+3 -> Circle
+4 -> Exit
+
+Enter choice: 3
+
+Enter Radius of Circle: 67
+
+Select Operation:
+1. Area
+2. Circumference
+3. Change Figure
+
+Enter choice: 2
+
+Circumference of Circle = 420.76
+
+Do you want to perform another operation on the same figure? (Y/N): N
+
+Select operation based on option:
+1 -> Rectangle
+2 -> Square
+3 -> Circle
+4 -> Exit
+
+Enter choice: 4
+
+Exiting Program... """
 
         
