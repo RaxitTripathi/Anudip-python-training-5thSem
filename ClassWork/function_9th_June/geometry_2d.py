@@ -4,10 +4,11 @@ from shapes_2d import *
 
 while(True):
     user_input=int(input(('''Select operation based on option:
-    1->Rectangle
-    2->Square
-    3->Circle
-    4->Exit:''')))
+1->Rectangle
+2->Square
+3->Circle
+4->Exit:
+''')))
 
 #Rectangle
     if user_input ==1:
