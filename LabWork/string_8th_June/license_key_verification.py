@@ -13,6 +13,10 @@ Write a program to:
 7. Display whether the key format is valid.  """
 
 key="ABCD-EFGH-IJKL-MNOP"
+
+if len(key) ==0:
+    exit("Invalid key")
+    
 print("License Key:", key)
 # 1.Verify there are exactly 4 groups.  
 
