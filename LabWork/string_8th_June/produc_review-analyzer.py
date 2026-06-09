@@ -12,7 +12,6 @@ Write a program to:
 6. Display words in reverse order.  
 7. Create a list of unique words.   """
 
-
 review = "This product is excellent excellent excellent and very useful"
 
 # Convert sentence into list of words
@@ -51,7 +50,10 @@ for word in freq:
     if freq[word] == 1:
         once_words.append(word)
 
-print("Words appearing once:", once_words)
+if len(once_words) == 0:
+    print("Words appearing once: No such words found")
+else:
+    print("Words appearing once:", once_words)
 
 # 5. Count words having more than 5 characters
 count_long_words = 0
@@ -65,7 +67,7 @@ print("Words with more than 5 characters:", count_long_words)
 # 6. Display words in reverse order
 print("Words in reverse order:")
 
-for i in range(len(words)-1, -1, -1):
+for i in range(len(words) - 1, -1, -1):
     print(words[i], end=" ")
 
 print()
@@ -76,8 +78,11 @@ unique_words = []
 for word in freq:
     unique_words.append(word)
 
-print("Unique Words:", unique_words)
-
+if len(unique_words) == 0:
+    print("Unique Words: No unique words found")
+else:
+    print("Unique Words:", unique_words)
+    
 """ output:
 
 Total Words: 9
