@@ -14,6 +14,8 @@ A3B3C3D3A3
 
 message="AAABBBCCCDDDAAA"
 
+if len(message) == 0:
+    exit("Empty message")
 # 1. Count occurrences of each character.  
 msg_dict={}
 for char in message:
