@@ -22,6 +22,10 @@ Additionally:
 
 password = "Python@2026!"
 
+#Password Validation
+if(len(password) < 8 ):
+    exit("Password length smaller than 8 Not allowed")
+
 # 1. Count uppercase letters
 upper_count = 0
 
