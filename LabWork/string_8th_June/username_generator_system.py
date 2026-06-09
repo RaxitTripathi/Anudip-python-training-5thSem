@@ -15,6 +15,9 @@ Generate a username using the rules:
 
 name="Rahul Sharma"
 
+if(len(name) <=0 ):
+    exit("Invalid Input Name!")
+    
 # 1. Remove spaces. 
 username=name.replace(" ","")
 
