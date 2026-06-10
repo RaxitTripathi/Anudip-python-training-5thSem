@@ -31,14 +31,10 @@ Expected Learning
 • Aggregation  
 • Report Generation  """
 
-
 from student_performence_operation import *
 
-
-# empty dictionary to store students
 students = {}
 
-# 1. Input 30 students
 print("Enter details of 30 students:\n")
 
 for i in range(30):
@@ -56,7 +52,6 @@ for i in range(30):
 print("\nAll 30 students added successfully!\n")
 
 
-# 2. Menu system
 while True:
 
     print("\n----- STUDENT MENU -----")
@@ -71,60 +66,52 @@ while True:
     print("9. Grade report")
     print("10. Above average students")
     print("11. Scholarship students")
-    print("12. Exit")
+    print("12. Top 5 performers")
+    print("13. Exit")
 
     choice = input("Enter choice: ")
 
-    # 1. Display all
     if choice == "1":
         display_all_students(students)
 
-    # 2. Search
     elif choice == "2":
         sid = input("Enter Student ID: ")
         search_student(sid, students)
 
-    # 3. Add
     elif choice == "3":
         sid = input("Enter Student ID: ")
         new_student(sid, students)
 
-    # 4. Update marks
     elif choice == "4":
         sid = input("Enter Student ID: ")
         update_marks(sid, students)
 
-    # 5. Delete
     elif choice == "5":
         sid = input("Enter Student ID: ")
         delete_students(sid, students)
 
-    # 6. Topper & Lowest
     elif choice == "6":
         position_students(students)
 
-    # 7. Average
     elif choice == "7":
         average_class(students)
 
-    # 8. Pass/Fail
     elif choice == "8":
         count_students(students)
 
-    # 9. Grades
     elif choice == "9":
         grade_students(students)
 
-    # 10. Above average
     elif choice == "10":
         above_average(students)
 
-    # 11. Scholarship
     elif choice == "11":
         scholarship_student(students)
 
-    # 12. Exit
     elif choice == "12":
+        top_5_students(students)
+
+    elif choice == "13":
         print("Exiting program...")
         break
 

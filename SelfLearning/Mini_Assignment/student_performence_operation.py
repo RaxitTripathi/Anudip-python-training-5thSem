@@ -59,33 +59,24 @@ def delete_students(sid,students):
 # 6. Find topper and lowest scorer.        
 
 def position_students(students):
-    # Assume first student is topper and lowest
 
-    topper_id = -1
-    lowest_id = 9999
+    topper_id = None
+    lowest_id = None
 
     for sid, data in students.items():
 
-        if data["marks"] > students[topper_id]["marks"]:
+        if topper_id is None or data["marks"] > students[topper_id]["marks"]:
             topper_id = sid
 
-        if data["marks"] < students[lowest_id]["marks"]:
+        if lowest_id is None or data["marks"] < students[lowest_id]["marks"]:
             lowest_id = sid
 
     print("\nTopper")
-    print(
-        topper_id,
-        students[topper_id]["name"],
-        students[topper_id]["marks"]
-    )
+    print(topper_id, students[topper_id]["name"], students[topper_id]["marks"])
 
     print("\nLowest Scorer")
-    print(
-        lowest_id,
-        students[lowest_id]["name"],
-        students[lowest_id]["marks"]
-)
-    
+    print(lowest_id, students[lowest_id]["name"], students[lowest_id]["marks"])
+
 # 7. Calculate class average.    
 def average_class(students):
     total = 0
@@ -159,7 +150,28 @@ def above_average(students):
         )
             
 # 11. Display top 5 performers.              
+def top_5_students(students):
 
+    temp = students.copy()
+
+    print("\nTop 5 Performers")
+
+    count = 0
+
+    while count < 5 and len(temp) > 0:
+
+        best_id = None
+
+        for sid, data in temp.items():
+
+            if best_id is None or data["marks"] > temp[best_id]["marks"]:
+                best_id = sid
+
+        print(best_id, temp[best_id]["name"], temp[best_id]["marks"])
+
+        temp.pop(best_id)
+
+        count += 1
 
 # 12. Create a separate dictionary for scholarship students (marks > 85). 
 
