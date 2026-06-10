@@ -1,4 +1,5 @@
-""" 4. Cricket Tournament Analytics System 
+"""
+ 4. Cricket Tournament Analytics System 
 Problem Statement 
 Store statistics of at least 30 cricket players. 
 Example Structure 

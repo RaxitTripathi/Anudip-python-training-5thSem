@@ -1,3 +1,4 @@
+
 # 1. Display all players
 def display_players(players):
     for name in players:
