@@ -1,3 +1,4 @@
+
 # 1. Display all cities
 def display_cities(cities):
     for city in cities:
