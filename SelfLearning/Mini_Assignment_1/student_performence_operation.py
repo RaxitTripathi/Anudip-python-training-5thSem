@@ -1,4 +1,5 @@
 
+
 #1. Display all student records
 
 def display_all_students(students):

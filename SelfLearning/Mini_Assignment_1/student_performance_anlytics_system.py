@@ -1,4 +1,5 @@
-""" 1. Student Performance Analytics System 
+""" 
+1. Student Performance Analytics System 
 Problem Statement 
 A coaching institute wants to analyze student performance. 
 Store details of at least 30 students in a dictionary. 
