@@ -75,3 +75,22 @@ print("Average Delivery Time:", average_delivery_time(delivery_time))
 
 print("\nDelivery Categories:")
 delivery_category(delivery_time)
+
+
+""" #Output
+
+Fastest Delivery Time: 18 minutes
+Delayed Orders: [60, 80, 55]
+Average Delivery Time: 40.8
+
+Delivery Categories:
+28 -> Fast
+45 -> Normal
+60 -> Delayed
+22 -> Fast
+35 -> Normal
+80 -> Delayed
+40 -> Normal
+25 -> Fast
+55 -> Delayed
+18 -> Fast """
