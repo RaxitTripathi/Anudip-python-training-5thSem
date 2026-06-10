@@ -2,7 +2,7 @@
 Problem Statement 
 Movie reviews are stored as follows: 
 reviews = [ 
-    "excellent movie", 
+    "excellent movie",  
     "average story", 
     "excellent acting", 
     "poor direction", 
