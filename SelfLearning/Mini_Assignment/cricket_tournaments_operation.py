@@ -111,29 +111,61 @@ def team_stats(players):
     print("Team Runs =", total_runs)
     print("Team Wickets =", total_wickets)
 
-
-# 10. Top 5 batsmen
+# 10. Top 5 batsmen 
 def top_batsmen(players):
 
-    sorted_players = sorted(players.items(), key=lambda x: x[1]["runs"], reverse=True)
+    temp = players.copy()
 
     print("Top 5 Batsmen")
 
-    for i in range(min(5, len(sorted_players))):
-        print(sorted_players[i][0], sorted_players[i][1]["runs"])
+    count = 0
+    total_players = len(temp)
+
+    limit = 5
+    if total_players < 5:
+        limit = total_players
+
+    while count < limit:
+
+        best = None
+
+        for name in temp:
+            if best is None or temp[name]["runs"] > temp[best]["runs"]:
+                best = name
+
+        print(best, temp[best]["runs"])
+        temp.pop(best)
+
+        count += 1
 
 
 # 11. Top 5 bowlers
 def top_bowlers(players):
 
-    sorted_players = sorted(players.items(), key=lambda x: x[1]["wickets"], reverse=True)
+    temp = players.copy()
 
     print("Top 5 Bowlers")
 
-    for i in range(min(5, len(sorted_players))):
-        print(sorted_players[i][0], sorted_players[i][1]["wickets"])
+    count = 0
+    total_players = len(temp)
 
+    limit = 5
+    if total_players < 5:
+        limit = total_players
 
+    while count < limit:
+
+        best = None
+
+        for name in temp:
+            if best is None or temp[name]["wickets"] > temp[best]["wickets"]:
+                best = name
+
+        print(best, temp[best]["wickets"])
+        temp.pop(best)
+
+        count += 1
+        
 # 12. Award winners
 def award_winners(players):
 
