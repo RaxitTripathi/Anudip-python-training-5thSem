@@ -190,4 +190,4 @@ def scholarship_student(students):
     print("\nScholarship Students")
 
     for sid, data in scholarship.items():
-        print(sid, data["name"], data["marks"])
+        print(sid, data["name"], data["marks"]) 
