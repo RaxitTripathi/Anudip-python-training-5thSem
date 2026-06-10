@@ -1,4 +1,5 @@
-""" 2. E-Commerce Inventory & Sales Dashboard 
+""" 
+2. E-Commerce Inventory & Sales Dashboard 
 Problem Statement 
 An online store wants to manage products and sales. 
 Example Structure 

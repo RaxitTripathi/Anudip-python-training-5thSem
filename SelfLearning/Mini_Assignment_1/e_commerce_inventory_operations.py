@@ -1,3 +1,4 @@
+
 # 1. Display all products
 def display_products(products):
     for pid in products:
