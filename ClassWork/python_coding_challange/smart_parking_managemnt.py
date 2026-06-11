@@ -55,12 +55,12 @@ for slot in parking_slots:
     count_first +=1  
 
 #  4. Calculate parking occupancy percentage.     
-
-print("Parking occupancy:",occupied_count*100/len(parking_slots))
+total_occupied=occupied_count*100/len(parking_slots)
+print("Parking occupancy:",total_occupied)
 
 # 5. Store updated parking information in parking.txt.
 
 
 file=open("parking.txt","w")
-file.write(parking_slots)
+file.write(parking_slots +"\n"+"Occupied count="+occupied_count+"\n"+"Vacant count="+vacant_count+"\n"+"Parking occupancy:"+total_occupied)
 file.close()
