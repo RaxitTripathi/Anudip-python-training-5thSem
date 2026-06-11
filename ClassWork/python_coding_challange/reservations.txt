@@ -1,0 +1,10 @@
+1Booked
+2Available
+3Booked
+4Available
+5Booked
+6Booked
+7Available
+8Booked
+9Available
+10Booked
