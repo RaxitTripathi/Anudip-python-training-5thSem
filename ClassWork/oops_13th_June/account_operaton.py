@@ -1,3 +1,13 @@
+""" 3. Bank Account Management (Basic–Intermediate) 
+Problem Statement: 
+Design a BankAccount class to manage customer accounts. 
+Implement methods to: 
+• Deposit money.  
+• Withdraw money.  
+• Check balance.  
+• Display account details.  
+Ensure that withdrawal is not allowed if the amount exceeds the available balance.
+ """
 #creating a class to operform various operation for a customer account
 class Account:
     #defining a constructor
